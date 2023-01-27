@@ -1,0 +1,15 @@
+@import 'mystyles.scss';
+@import 'reset.scss';
+@import 'consts.scss';
+
+body{
+    font-family: 'Raleway', 'Arial';
+    font-style: normal;
+    font-weight: 300;
+}
+
+.container{
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 0 20px;
+}

@@ -1,0 +1,74 @@
+.authpage {
+    header {
+        position: relative;
+
+        .nav-left {
+            a {
+                color: black;
+            }
+        }
+
+        .nav-center,
+        .nav-right {
+            a {
+                color: #E0BEA2;
+            }
+        }
+
+        span {
+            background-color: #E0BEA2;
+        }
+    }
+}
+.login {
+    &__wrapper {
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 70px;
+        position: relative;
+
+        h4 {
+            margin-bottom: 40px;
+            font-size: 20px;
+            line-height: 23px;
+        }
+
+        input {
+            border: 0.5px solid #252525;
+            width: 100%;
+            padding: 16px;
+            margin-bottom: 20px;
+        }
+
+        img {
+            position: absolute;
+            top: 153px;
+            right: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 19px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background: #E0BEA2;
+            width: 100%;
+            color: white;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 16px;
+            margin-top: 20px;
+        }
+    }
+}
+.forgetconfirm{
+    form{
+        img {
+            top: 190px;
+        }
+    }
+}

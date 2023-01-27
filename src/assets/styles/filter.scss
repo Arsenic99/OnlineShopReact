@@ -1,0 +1,17 @@
+.filter{
+    grid-area: filter;
+    select{
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width:425px) {
+    .filter{
+        .MuiFormControl-root{
+            display: block;
+        }
+        select{
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+}

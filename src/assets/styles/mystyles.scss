@@ -1,0 +1,114 @@
+.d-flex {
+    display: flex !important;
+}
+
+.d-iflex {
+    display: inline-flex !important;
+}
+
+.d-block {
+    display: block !important;
+}
+
+.d-hide {
+    display: hide !important;
+}
+
+.d-grid{
+    display: grid;
+}
+
+.grid-temp-col1{
+    grid-template-columns: 1fr;
+}
+
+.grid-temp-col2{
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-temp-col3{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-temp-col4{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.grid-temp-col5{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-temp-col6{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.gap5{
+    gap: 5px;
+}
+
+.gap10{
+    gap: 10px;
+}
+
+.gap15{
+    gap: 15px;
+}
+
+.gap20{
+    gap: 20px;
+}
+
+.justify-content-between {
+    justify-content: space-between !important;
+}
+
+.justify-content-around {
+    justify-content: space-around !important;
+}
+
+.justify-content-center {
+    justify-content: center !important;
+}
+
+.justify-content-start {
+    justify-content: flex-start !important;
+}
+
+.justify-content-end {
+    justify-content: flex-end !important;
+}
+
+.align-items-center{
+    align-items: center !important;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.flex-nowrap{
+    flex-wrap: nowrap;
+}
+
+.w-0{
+    width: 0vw;
+    padding: 55px 0 0;
+}
+
+.w-25{
+    width: 25vw;
+}
+
+.w-50{
+    width: 50vw;
+}
+
+.w-100{
+    width: 100%;
+}
+
+@mixin size($property, $initValue, $finalValue) {
+    $width: 100vw;
+    $minWidth: 320px;
+    #{$property}: calc($initValue * (1px) + ($finalValue - $initValue) * ((#{$width} - #{$minWidth}) / (1440 - 320)))
+}

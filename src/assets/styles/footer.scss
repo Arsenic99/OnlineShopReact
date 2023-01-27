@@ -1,0 +1,45 @@
+@import 'mystyles.scss';
+
+footer {
+    @include size(margin-top, 60, 100);
+    .footer {
+        h5,
+        a {
+            display: block;
+            color: #252525;
+            margin-bottom: 10px;
+        }
+
+        h5 {
+            font-size: 20px;
+            line-height: 23px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+        }
+
+        a {
+            font-weight: 200;
+            font-size: 16px;
+            line-height: 19px;
+        }
+        &__social{
+            a{
+                font-size: 18px;
+                margin-right: 10px;
+                color: #E0BEA2;
+            }
+        }
+    }
+}
+@media screen and (max-width:767px) {
+    .footer{
+        grid-template-columns: auto auto !important;
+        gap: 10px;
+    }
+}
+@media screen and (max-width:374px) {
+    .footer{
+        grid-template-columns: auto !important;
+        gap: 10px;
+    }
+}

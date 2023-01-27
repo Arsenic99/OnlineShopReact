@@ -1,0 +1,26 @@
+.catalogcard {
+    max-width: 310px;
+    width: 100%;
+    cursor: pointer;
+    img {
+        max-width: 310px;
+        width: 100%;
+    }
+    p{
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #252525;
+    }
+    &__name{
+        margin: 15px 0 5px;
+    }
+    &__price {
+        font-weight: 700;
+    }
+
+    &__size {
+        margin: 5px 0;
+        color: rgba(37, 37, 37, 0.5);
+    }
+}

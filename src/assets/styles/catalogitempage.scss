@@ -1,0 +1,18 @@
+.catalogitempage{
+    header{
+        position: relative;
+        .nav-left{
+            a{
+                color: black;
+            }
+        }
+        .nav-center, .nav-right{
+            a{
+                color: #E0BEA2;
+            }
+        }
+        span{
+            background-color: #E0BEA2;
+        }
+    }
+}

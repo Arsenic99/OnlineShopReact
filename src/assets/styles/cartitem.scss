@@ -1,0 +1,131 @@
+.cartitem {
+    position: relative;
+    align-items: center;
+    padding: 10px 0;
+    grid-template-areas: 'img art art art art art art''img name color size quantity price delete''img . . . . . .';
+    gap: 5px;
+    div {
+        img {
+            max-width: 95px;
+        }
+    }
+
+    &__art {
+        grid-area: art;
+    }
+
+    &__color {
+        grid-area: color;
+    }
+
+    &__delete {
+        grid-area: delete;
+        cursor: pointer;
+    }
+
+    &__delete-mobile{
+        cursor: pointer;
+    }
+
+    &__img {
+        grid-area: img;
+    }
+
+    &__name {
+        grid-area: name;
+    }
+
+    &__price {
+        grid-area: price;
+    }
+
+    &__quantity {
+        grid-area: quantity;
+        font-size: 16px;
+        line-height: 25px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #252525;
+        
+        .counter{
+            display: inline-block;
+            border-radius: 4px;
+            border: 1px solid rgba(0, 0, 0, 0.23);
+            &__quantity{
+                max-width: 30px;
+                text-align: center;
+            }
+            &__increment, &__decrement{
+                background-color: transparent;
+                cursor: pointer;
+                padding: 14px;
+                font-size: 25px;
+            }
+        }
+    }
+
+    &__size {
+        grid-area: size;
+        .css-1869usk-MuiFormControl-root{
+            min-width: 60px !important;
+            margin: 0 !important;
+        }
+    }
+}
+.cartitem:not(:last-child){
+    border-bottom: 1px solid black;
+}
+@media screen and (max-width:767px) {
+    .cartitem {
+        column-gap: 10px;
+        div {
+            img {
+                max-width: 107px;
+            }
+        }
+        align-items: start;
+        justify-content: start;
+        grid-template-areas: 'img art' 'img name' 'img color' 'img size' 'img quantity' 'img price';
+        &__size{
+            .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input{
+                padding: 3.5px 14px;
+            }
+        }
+        &__quantity {
+            .counter{
+                font-size: 14px;
+                &__increment, &__decrement{
+                    padding: 3.5px 7px;
+                    line-height: 10px;
+                }
+            }
+        }
+        &__delete{
+            display: none;
+        }
+        &__delete-mobile{
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            span{
+                position: absolute;
+                display: block;
+                content: '';
+                width: 20px;
+                height: 1px;
+                background-color: #252525;
+            }
+            span:first-child{
+                top: 0;
+                left: 0;
+                transform: rotate(45deg);
+                transform-origin: 0;
+            }
+            span:last-child{
+                top: 0;
+                left: 14px;
+                transform: rotate(135deg);
+                transform-origin: 0;
+            }
+        }
+    }    
+}

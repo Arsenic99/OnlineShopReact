@@ -1,0 +1,24 @@
+.category {
+    padding: 0 10px;
+    h3 {
+        font-size: 36px;
+        line-height: 42px;
+        color: #252525;
+        margin: 10% 0 5%;
+    }
+    .container{
+        div{    
+            grid-template-columns: auto auto auto auto;
+            gap: 10px;
+        }
+    }
+}
+@media screen and (max-width:768px) {
+    .category {
+        .container{
+            div{    
+                grid-template-columns: auto auto;
+            }
+        }
+    }
+}

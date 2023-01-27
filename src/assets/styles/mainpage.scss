@@ -1,0 +1,49 @@
+.firstsection {
+    background: url(../images/mainBack1.png) top left,
+        url(../images/mainBack2.png) top center,
+        url(../images/mainBack3.png) top right;
+    background-repeat: no-repeat;
+    background-size: 33.333334%;
+    height: 100vh;
+    text-align: center;
+
+    h2 {
+        font-size: 46px;
+        line-height: 54px;
+        color: #FFFFFF;
+        opacity: 0.85;
+        padding: calc(220px + (329 - 220)*((100vw - 320px)/(1440 - 320))) 10px 0;
+
+    }
+
+    span {
+        background: #FFFFFF;
+        width: 120px;
+        height: 1px;
+        display: inline-block;
+        margin: 20px 0;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .firstsection {
+        background: url(../images/mainBack1.png) top left,
+            url(../images/mainBack2.png) top right;
+        background-repeat: no-repeat;
+        background-size: 50%;
+    }
+}
+@media screen and (max-width: 425px) {
+    .firstsection {
+        background: url(../images/mainBack1.png) top center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+}

@@ -1,0 +1,88 @@
+@import 'mystyles.scss';
+
+.catalogitem {
+    width: 100%;
+    gap: 20px;
+    &__img,
+    &__text {
+        margin-bottom: 100px;
+        width: 50%;
+    }
+    &__text {
+        margin-top: 40px;
+    }
+
+    &__text-name {
+        font-size: 20px;
+        line-height: 23px;
+        color: #252525;
+    }
+
+    &__text-price {
+        margin: 20px 0;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: #252525;
+    }
+
+    &__text-choose {
+        margin-bottom: 20px;
+        gap: 10px;
+    }
+
+    &__text-cart,
+    &__text-favourite {
+        @include size(font-size, 13, 16);
+        padding: 16px;
+        border: 0.5px solid #252525;
+        width: 50%;
+        text-transform: uppercase;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    &__text-cart {
+        background: #E0BEA2;
+        color: #FFFFFF;
+    }
+
+    .MuiFormControl-root {
+        width: 100%;
+        margin: 0 0 35px !important;
+
+        em {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 200;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            color: #252525;
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    .catalogitem {
+        flex-direction: column;
+        align-items: center;
+        &__img,
+        &__text {
+            width: 100%;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .catalogitem {
+        &__img,
+        &__text {
+            margin-bottom: 0px;
+        }
+        &__text{
+            margin-top: 0px;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+@import 'mystyles.scss';
+
+.subscribe {
+    width: 100%;
+    padding: 0 10px;
+    h3 {
+        font-weight: 300;
+        font-size: calc(20px + (36 - 20)*((100vw - 320px)/(1440 - 320)));
+        @include size(line-height, 20, 42);
+        text-align: center;
+        color: #252525;
+        margin: calc(60px + (100 - 60)*((100vw - 320px)/(1440 - 320))) 0 calc(30px + (50 - 30)*((100vw - 320px)/(1440 - 320)));
+    }
+
+    input,
+    ::placeholder {
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: rgba(37, 37, 37, 0.5);
+    }
+
+    input {
+        text-align: left;
+        width: 100%;
+        padding: 16px;
+        border: 0.5px solid #252525;
+    }
+
+    button {
+        margin: 20px 0;
+        padding: 16px;
+        width: 100%;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background: #E0BEA2;
+    }
+
+    p {
+        font-weight: 200;
+        font-size: calc(10px + (16 - 10)*((100vw - 320px)/(1440 - 320)));
+        line-height: calc(14px + (19 - 14)*((100vw - 320px)/(1440 - 320)));
+        text-align: center;
+        color: #252525;
+    }
+    &__wrapper{
+        max-width: 600px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}

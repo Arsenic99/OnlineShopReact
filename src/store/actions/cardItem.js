@@ -1,0 +1,5 @@
+export const SET_TO_CARD = 'SET_TO_CARD';
+export const INC_QUANTITY = 'INC_QUANTITY';
+export const DEC_QUANTITY = 'DEC_QUANTITY';
+export const DELETE_FROM_CARD = 'DELETE_FROM_CARD';
+export const CHANGE_ITEM_SIZE = 'CHANGE_ITEM_SIZE';

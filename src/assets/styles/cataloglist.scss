@@ -1,0 +1,59 @@
+@import './consts.scss';
+
+.cataloglist {
+    grid-area: cataloglist;
+    position: relative;
+    width: 150px;
+    h6 {
+        margin-bottom: 30px;
+        font-size: 20px;
+        line-height: 23px;
+        color: #252525;
+        z-index: 1;
+        position: relative;
+    }
+    p {
+        cursor: pointer;
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 19px;
+        color: #252525;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .cataloglist{
+        width: 100%;
+        h6{
+            display: block;
+            text-align: center;
+            background-color: $maincolor;
+            padding: 9px;
+        }
+        .catalotlist__items{
+            position: absolute;
+            z-index: -1;
+            top: 100%;
+            left: 0;
+            width: 100%;
+        }
+        p {
+            text-align: center;
+            transition: all 0.3s ease;
+            opacity: 0;
+            transform: translateY(-60px);
+        }
+    }
+    .cataloglist:hover{
+        background-color: $maincolor;
+        .catalotlist__items{
+            z-index: 1;
+            background-color: $maincolor;
+        }
+        p{
+        transition: all 0.3s ease;
+        opacity: 1 !important;
+        transform: translateY(0px);
+        }
+    }
+}

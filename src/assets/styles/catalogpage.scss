@@ -1,0 +1,14 @@
+.catalogPage{
+    .catalogmain{
+        margin-top: 34px;
+        display: grid;
+        width: 100%;
+        gap: 10px;
+        grid-template-areas: 'cataloglist filter' 'cataloglist catalogtable';
+    }
+}
+@media screen and (max-width:425px) {
+    .catalogmain{
+        grid-template-areas: 'cataloglist' 'filter' 'catalogtable' !important;
+    }
+}
