@@ -19,7 +19,7 @@ function App() {
     <div className="app">
       <Header/>
       <Routes>
-        <Route path='/Online-shop-React' element={<Main/>}/>
+        <Route path='/' element={<Main/>}/>
         <Route path='/catalog' element={<Catalog/>}/>
         <Route path='/:id' element={<CatalogItemPage/>}/>
         <Route path='/favourite' element={<FavouritePage/>}/>
