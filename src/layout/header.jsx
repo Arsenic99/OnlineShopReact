@@ -12,7 +12,7 @@ const Header = (props) => {
                     <Burgermenu />
                     <div className='nav-left d-flex justify-content-between align-items-center'>
                         <NavLink to='/new' style={{color: location.pathname === '/' ? 'white' : 'black'}}>new</NavLink>
-                        <NavLink to='./catalog' style={{color: location.pathname === '/' ? 'white' : 'black'}}>Каталог</NavLink>
+                        <NavLink to='/catalog' style={{color: location.pathname === '/' ? 'white' : 'black'}}>Каталог</NavLink>
                         <NavLink to='/about' style={{color: location.pathname === '/' ? 'white' : 'black'}}>О нас</NavLink>
                     </div>
                     <div className='nav-center d-flex justify-content-center align-items-center'>
