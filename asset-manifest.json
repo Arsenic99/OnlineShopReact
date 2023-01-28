@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/OnlineShopReact/static/css/main.a48a0a6a.css",
+    "main.js": "/OnlineShopReact/static/js/main.7fdcadca.js",
+    "static/media/mainBack2.png": "/OnlineShopReact/static/media/mainBack2.18499df533afa6b6877b.png",
+    "static/media/mainBack3.png": "/OnlineShopReact/static/media/mainBack3.b3d9f3791dc2d3bafed6.png",
+    "static/media/mainBack1.png": "/OnlineShopReact/static/media/mainBack1.b3a8a241edcb7103065a.png",
+    "static/media/accessories.png": "/OnlineShopReact/static/media/accessories.2cfb98ab9e728c44ced2.png",
+    "static/media/woman.png": "/OnlineShopReact/static/media/woman.0cb9597770672c1352d8.png",
+    "static/media/man.png": "/OnlineShopReact/static/media/man.467c94d996fb8497dba5.png",
+    "static/media/child.png": "/OnlineShopReact/static/media/child.80bacdba826b21ff0e6a.png",
+    "static/media/Palto.png": "/OnlineShopReact/static/media/Palto.29b3f7b0e1f20ff1ed55.png",
+    "static/media/Shuba.png": "/OnlineShopReact/static/media/Shuba.75ff63259e25538a2ca2.png",
+    "static/media/Kurtka.png": "/OnlineShopReact/static/media/Kurtka.6b1c0473a8e8cb84e9f2.png",
+    "static/media/icons.svg?bdd5c2": "/OnlineShopReact/static/media/icons.0af32519e2ba0733f624.svg",
+    "static/media/icons.eot?bdd5c2": "/OnlineShopReact/static/media/icons.d96f232e38b0e5b22903.eot",
+    "static/media/icons.woff?bdd5c2": "/OnlineShopReact/static/media/icons.d7711584ee34dbe15cdb.woff",
+    "static/media/icons.ttf?bdd5c2": "/OnlineShopReact/static/media/icons.84a2949d0b5fc2d16873.ttf",
+    "static/media/password.svg": "/OnlineShopReact/static/media/password.9f58366d6e70eb293886168a47a160e8.svg",
+    "index.html": "/OnlineShopReact/index.html",
+    "main.a48a0a6a.css.map": "/OnlineShopReact/static/css/main.a48a0a6a.css.map",
+    "main.7fdcadca.js.map": "/OnlineShopReact/static/js/main.7fdcadca.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a48a0a6a.css",
+    "static/js/main.7fdcadca.js"
+  ]
+}
