@@ -1,7 +1,7 @@
 {
   "name": "client",
   "version": "0.1.0",
-  "homepage": "https://Arsenic99.github.io/Online-shop-React",
+  "homepage": "https://Arsenic99.github.io/Online-shop-React/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
